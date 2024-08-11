@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+    <style type="text/css">
+        div{
+            margin:00px 100px 100px 400px;  
+            
+            
+        }
+        input[type="submit"]{margin-top: 10px;}
+
+        
+    </style>
+    
+      
+       
+    </style>
+</head>
+<body>
+    <div>
+    <form action="save.html" target="_blank" method="po">
+           
+	<label for="name">EName</label>
+	<input type="text" name="name" placeholder="Name" mandatory required="this field is mandatory" maxlength="25" ><br><br>
+	<label for="email">Email</label> 
+    <input type="email" name="name" value="test@example.com" required="" autofocus=""><br><br>
+    <label for="pass">Password</label>
+    <input type="password" name="pass" required="required field" maxlength="6"><br><br>
+    <input type="submit"><br><br>
+    <label for="Cat">Category</label>
+    <select id="cat" name="cate" required="required field">
+    	<option value="student">Student</option>
+    	<option value="employee">Employee</option>
+        <option value="freelancer" selected="freelancer">Freelancer</option>
+    </select><br><br>
+    
+    <label for="date">Event date</label>   
+    <input  id="date"type="date" name="event date"  max="2030-10-09" min="2020-09-09" value="2021-05-25">
+    <br>
+    <br>
+    <input type="radio" name="ticket1">
+    <label for="ticket1">1 ticket</label>
+    
+    <input type="radio"name="ticket2" checked="">
+    <label for="ticket2" >2 ticket</label>
+    
+    <input type="radio" name="ticket3">
+    <label for="ticket3">3 ticket</label>
+</form>
+<form>
+<label for=cb>Online payment </label>
+<input type="checkbox" name="cb">
+<br><br>
+<label for=notes>Notes</label>
+<input type="text" name="notes" placeholder="Notes" >
+<br>
+<input type="submit" >
+</div>
+</form>
+
+
+
+</body>
+</html>
