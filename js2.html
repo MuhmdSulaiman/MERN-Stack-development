@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<div id="demo" style="height:100px; width: 100px;"></div>
+<button id="btn" onclick="buton()">Get Random</button>
+
+<script type="text/javascript">
+ let x=Math.random();  
+   function buton(){
+if(x<0.5){  
+    document.getElementById('demo').innerHTML=x;
+    document.getElementById('demo').style.backgroundColor="red";
+    document.getElementById('demo').style.borderRadius="250px";
+}
+else {
+    document.getElementById('demo').innerHTML=x;
+    document.getElementById('demo').style.backgroundColor="green";
+    document.getElementById('demo').style.height="100px";
+    document.getElementById('demo').style.width="100px";   
+
+    }
+};
+
+</script>
+
+</body>
+</html>
