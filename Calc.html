@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+</style>
+<body>
+    <p>Calculator</p>
+    <table border="1" style="width:300px;height: 300px;border-collapse:collapse;">
+        <tr><input type="text" id="screen" style="width: 290px; height: 50px;">
+
+        </tr>
+        <tr>
+            <td onclick="cleardisplay()">AC</td>
+            <td>/</td>
+            <td>%</td>
+            <td onclick="deletelast()">Bc</td>
+        </tr>
+        <tr>
+            <td onclick="display('7')">7</td>
+            <td onclick="display('8')">8</td>
+            <td onclick="display('9')">9</td>
+            <td onclick="display('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="display('4')">4</td>
+            <td onclick="display('5')">5</td>
+            <td onclick="display('6')">6</td>
+            <td onclick="display('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="display('1')">1</td>
+            <td onclick="display('2')">2</td>
+            <td onclick="display('3')">3</td>
+            <td onclick="display('+')">+</td>
+        </tr>    
+        <tr>
+            <td colspan="2" onclick="display('0')">0</td>
+            <td>.</td>
+            <td onclick="Valuate()">=</td>
+        </tr>       
+    <script>
+        function display(a) { //function to display the values
+            console.log(a);     
+         document.getElementById("screen").value += a 
+        }
+        function cleardisplay(){ //functioin to clear the display
+            document.getElementById("screen").value="";
+        }
+        function deletelast(){//functon to backspace the display
+            let x=document.getElementById("screen").value.slice(0,-1)
+            document.getElementById("screen").value=x;       
+        }   
+        function Valuate(){
+            let a=document.getElementById("screen").value
+            let b=eval(a);
+            document.getElementById("screen").value=b;
+        }
+
+         
+
+
+
+         
+    </script>
+      
+</body>
+</html>
